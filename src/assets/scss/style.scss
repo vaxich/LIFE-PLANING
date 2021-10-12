@@ -1,6 +1,4 @@
-body {
-    background-color: rgb(37, 37, 37);
-    color: white;
-}
+@import './abstracts/mixins';
+@import './abstracts/vars';
 
-@import './style2.scss'
+@import '../scss/header';

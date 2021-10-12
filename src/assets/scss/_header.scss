@@ -1,0 +1,53 @@
+.header{
+    &__wrap{
+        margin:0 117px;
+        margin-top: 26px;
+        
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+        
+        align-items: center;
+    }
+
+    &__menu{
+        display: flex;
+        margin-left: 58px;
+    }
+    &__menu-link{
+        display: flex;
+        
+    }
+    &__logo{
+        height: 26px;
+        width: 26px;
+    }
+    &__social{
+        display: flex;
+        padding-left: 10px;
+    }
+    &__nav-link{
+        padding-right: 28px;
+        @include text(Quicksand, 12px, 500, 15px, $textColor);
+    }
+    &__nav-link:hover {
+        @include text("Quicksand", 12px, 700, 15px, $hoverColor);
+    }
+    &__btn{
+        max-width: 113px;
+        max-height: 43px;
+        @include text("Quicksand", 13px, 700, 16px, $accentColor);
+        background-color:$primaryColor;
+        border-color: $primaryColor;
+    }
+}
+
+.social__img{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.social__img:hover{
+    fill: $hoverColor;
+    
+}
